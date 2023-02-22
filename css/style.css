@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../img/bg1.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#scoreBox{
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sacramento', cursive;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 63px;
+    right: 162px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sacramento', cursive;
+    
+}
+
+
+#board{
+    background: linear-gradient(rgb(174, 206, 174), rgb(242, 242, 179));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display:grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+
+.head{
+    background-color: rgb(185, 109, 68);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 17px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 18px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 25px;
+    
+}
+
